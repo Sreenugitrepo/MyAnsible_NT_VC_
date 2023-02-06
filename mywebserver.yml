@@ -11,5 +11,5 @@
   - name: i want to start webserver on ansible ubuntu nodes
     service:
       name: apache2
-      state: present
+      state: started
     when: ansible_os_family =="Debian"
