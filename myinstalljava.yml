@@ -1,6 +1,7 @@
 ---
 - hosts: mywebservers
   become: yes
+  tasks:
 - name: i want to  java install ansible ubuntu nodes
   apt:
     name: openjdk-8-jre
