@@ -5,3 +5,13 @@
 [mywebservers: vars]
 172.31.23.181
 172.31.21.61
+
+
+
+
+[myubuntuservers: vars]
+172.31.23.181
+
+
+[myredhatservers: vars]
+172.31.21.61
