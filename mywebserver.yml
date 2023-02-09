@@ -2,12 +2,6 @@
 - hosts: mywebservers
   become: yes
   tasks:
-  - name: i want to insatll webserver on ansible ubuntu nodes
-    apt:
-      name: "{{mywebpackforubuntu}}"
-      state: present
-    when: ansible_os_family =="Debian"
-
   - name: I want to insatall tree
     apt:
       name: tree
