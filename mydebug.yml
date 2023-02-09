@@ -9,4 +9,17 @@
   - name: i Want To Display Myfirst task myResults
     debug:
      msg: "{{myResults}}"
-    
+  
+  - name:  install git
+    apt:
+     name: git
+     state: present
+  when: myResults.stderr ==""
+  - name: install tree
+    apt:
+     name: tree
+     state: present
+  when: myResults.stderr !=""
+    ignore_errors: yes
+
+
