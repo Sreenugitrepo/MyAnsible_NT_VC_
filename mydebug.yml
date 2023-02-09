@@ -14,12 +14,13 @@
     apt:
      name: git
      state: present
-  when: myResults.stderr ==""
+    when: myResults.stderr ==""
+
   - name: install tree
     apt:
      name: tree
      state: present
-  when: myResults.stderr !=""
-    ignore_errors: yes
+    when: myResults.stderr !=""
+    
 
 
